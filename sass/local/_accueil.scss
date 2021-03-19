@@ -47,8 +47,34 @@ body.home::after{
     left: 0;
     right:0;
     @include tablette{
-        clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+        clip-path: polygon(90% 0, 150% 0, 100% 100%, 50% 100%);
         background-color:rgb(0, 0, 212);
     }
   z-index: -1;
+}
+
+.home .cours
+{
+    display:flex;
+    flex-direction: column;
+
+    article
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: darkgrey;
+        border: 2px solid;
+        margin-right: 60px;
+        p{
+            margin: .3rem;
+            font-size: 1rem;
+        }
+        a{
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
 }
