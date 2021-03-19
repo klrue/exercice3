@@ -46,8 +46,8 @@
 		</div><!-- .site-branding -->
 
 	<section class='carrousel'>
-	<div>Bienvenue sur le labo 4</div>
-	<div>26 février 2021</div>
+	<div>Bienvenue sur le TP1</div>
+	<div>21 mars 2021</div>
 	<div>Collège de Maisonneuve</div>
 	</section>
 	<article class="boutonsMenu">
