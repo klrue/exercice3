@@ -1,3 +1,8 @@
+
+@media screen and (min-width: 37.5em) {
+
+
+
 .site-title
 {
 
@@ -5,23 +10,44 @@ font-family: $font__title;
 font-size: clamp(1.5rem, #{'-0.875rem + 8.333vw'}, 4rem);
 font-weight: bold;
 color:black;
-animation: pulse 5s infinite alternate;
+animation: pulse 5s infinite cubic-bezier(.17,.67,1,-0.09);
+
 
 
 a{
     text-decoration: none;
    
-}
+   
 }
 
+
+
+}
+}
+a{
+    text-decoration: none;
+   
+   
+}
+
+
+//Animation du background du titre changeant de couleur en 5 secondes + translation X
 @keyframes pulse{
     0% {
         background-color: #0400ff;
+        transform: translateX(0px);
+      }
+      50%{
+        transform: translateX(20vw);
+        background-color: #ffffff;
       }
       100% {
-        background-color: #09ff00;
+        background-color: #0400ff;
+      
       }
 }
+
+
 .site-description
 {
     font-family: $font__title;
@@ -58,6 +84,12 @@ body.home::after{
     display:flex;
     flex-direction: column;
 
+   /* section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    */
     article
     {
         display: flex;
@@ -76,5 +108,6 @@ body.home::after{
             font-weight: bold;
             text-decoration: none;
         }
-    }
+   }
+
 }

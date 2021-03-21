@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-/////////////////////////////////////// FRONT-PAGE.php
+
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
@@ -23,7 +23,7 @@ get_header();
 			<section class="cours">
 			<?php
 			/* Start the Loop */
-			$precedent=0;
+			$precedent="XXXXXX";
 			while ( have_posts() ) :
 				the_post();
                 $titre = get_the_title();
@@ -34,17 +34,31 @@ get_header();
                 //$contenu = get_the_content();
                 //$resume = substr($contenu,0,200);
 				$typeCours = get_field('type_de_cours');
-               ?>
+				 if($precedent != $typeCours): ?>
+                <?php   if($precedent != "XXXXXX") :?>
+                    </section>
+                    <?php endif ?>
+                    <h2><?php echo $typeCours?></h2>
+					<section>
+					 
+					 <?php endif ?>
 			   <article>
 				   <p><?php echo $sigle . " - " . $typeCours; ?></p>
 				   <a href="<?php echo get_permalink()?>"><?php echo $titrePartiel;?></a>
 				   <p>Session <?php echo $session; ?></p>
 			   </article>
-               <?php endwhile;?>
-			</section> <!--fin section cours-->
-		<?php endif;?>
 
+			   <?php 
+			   $precedent = $typeCours;
+				endwhile
+			   ?>
+			   
+			</section>
+			
+		
+			<?php endif;?>
 	</main><!-- #main -->
+
 
 <?php
 get_sidebar();
