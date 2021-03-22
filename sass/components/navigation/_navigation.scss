@@ -2,7 +2,7 @@
 	display: block;
 	width: 100vw;
 	
-
+//caractéristiques du ul principal
 	ul {
 		display: none;
 		position : absolute;
@@ -15,7 +15,7 @@
 		left:0;
 	
 	
-
+//caractéristiques du menu aborescent
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			//float: left;
@@ -37,7 +37,7 @@
 			left: 0;
 		
 		}
-
+//liens non  ouverts ont des "+"
 		li> a[href="#"]::after
 		{
 			content : "+";
@@ -49,7 +49,7 @@
             left:90%;
             right:0;
 		}
-		
+		//liens ouverts ont des "+"
 		li.focus > a[href="#"]::after,
         li > a[href="#"]:hover::after{
             content : "-";
@@ -114,6 +114,7 @@
 /* -----------------------------------------------------------------------------
 Bouton burger 
 ------------------------------------------------------------------------------*/
+//lordqu'on clique sur le bouton burger, il fait une rotation + affiche le menu
 .menu-toggle {
 	padding :0;
 	transition : transform .25s;
