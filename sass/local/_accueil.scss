@@ -1,5 +1,5 @@
 
-
+//classe du nom principal du site
 .site-title
 {
     display: flex;
@@ -9,12 +9,13 @@ font-family: $font__title;
 font-size: clamp(1.5rem, #{'-0.875rem + 8.333vw'}, 4rem);
 font-weight: bold;
 color:black;
+//animation en alternance du background du titre
 animation: pulse 5s infinite alternate;
 margin-right: 70px;
 padding-right: 30px;
 
 
-
+//aucune sourlignage sur le titre
 a{
     text-decoration: none;
    
@@ -41,7 +42,7 @@ a{
       }
 }
 
-
+//caractéristiques de la description du site
 .site-description
 {
     font-family: $font__title;
@@ -66,10 +67,13 @@ body.home::after{
     bottom: 0;
     left: 0;
     right:0;
+    //ajout d'un clip-path seulement visible en mode Desktop
     @include tablette{
         clip-path: polygon(90% 0, 150% 0, 100% 100%, 50% 100%);
         background-color:rgb(0, 0, 212);
     }
+    clip-path: polygon(0% 10%, 36% 10%, 81% 50%, 80% 100%, 0% 100%);
+    background-color:rgba(77, 77, 77, 0.3);
   z-index: -1;
 }
 
@@ -84,21 +88,37 @@ body.home::after{
         flex-wrap: wrap;
         justify-content: space-between;
     */
+
+    //spécifications pour les articles vers les différents cours
     article
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: darkgrey;
-        border: 2px solid;
+        background-color: orange;
+        margin-bottom: 1vh;
+        border: 5px solid;
         margin-right: 60px;
+        height:150px;
+
+        
+        
         p{
             margin: .3rem;
-            font-size: 1rem;
+            font-size: clamp(0.10rem, #{'-0.875rem + 8.333vw'}, 1rem);
+            @include tablette{
+                font-size: clamp(0,25rem, #{'-0.875rem + 8.333vw'}, 1rem);
+            }
         }
-        a{
-            font-size: 2rem;
+        a{@include tablette{
+            font-size: clamp(2rem, #{'-0.875rem + 8.333vw'}, 1rem);
+            padding-right: none;
+           
+        }
+        text-align: center;
+        padding-right: 40px;
+            
             font-weight: bold;
             text-decoration: none;
         }

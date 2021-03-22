@@ -1,6 +1,6 @@
 
 
-
+//classe du slider de la page d'accueil
 .carrousel
 {
     display: flex;
@@ -8,8 +8,12 @@
     width:300vw;
     height: 20vh;
     font-size: 2rem;
+    //shadow pour le slider, plus de visibilité
+    -webkit-box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
+box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
     
-
+//animation du slider, déplacement en X, réalisé en 1,5 secondes
     transition: transform 1.5s;
 
     div{

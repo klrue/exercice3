@@ -1109,6 +1109,8 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
+  clip-path: polygon(0% 10%, 36% 10%, 81% 50%, 80% 100%, 0% 100%);
+  background-color: rgba(77, 77, 77, 0.3);
   z-index: -1;
 }
 
@@ -1135,20 +1137,36 @@ body.home::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: darkgrey;
-  border: 2px solid;
+  background-color: orange;
+  margin-bottom: 1vh;
+  border: 5px solid;
   margin-right: 60px;
+  height: 150px;
 }
 
 .home .cours article p {
   margin: .3rem;
-  font-size: 1rem;
+  font-size: clamp(0.1rem, -0.875rem + 8.333vw, 1rem);
+}
+
+@media (min-width: 800px) {
+  .home .cours article p {
+    font-size: clamp(0, 25rem, -0.875rem + 8.333vw, 1rem);
+  }
 }
 
 .home .cours article a {
-  font-size: 2rem;
+  text-align: center;
+  padding-right: 40px;
   font-weight: bold;
   text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .home .cours article a {
+    font-size: clamp(2rem, -0.875rem + 8.333vw, 1rem);
+    padding-right: none;
+  }
 }
 
 .carrousel {
@@ -1156,6 +1174,7 @@ body.home::after {
   width: 300vw;
   height: 20vh;
   font-size: 2rem;
+  box-shadow: 9px 7px 24px 6px rgba(0, 0, 0, 0.75);
   transition: transform 1.5s;
 }
 
