@@ -57,7 +57,7 @@ box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
     
 //Ajout de spécificités aux boutons
     button{
-  
+  //border arrondi
     border-radius:50% ;
     background-color: $color_white;
     border: 5px solid $color_boutons_slider;
