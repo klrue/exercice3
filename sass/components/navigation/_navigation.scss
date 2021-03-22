@@ -68,7 +68,7 @@
     }
 		
 //affichage du "+" sur les sections "session'
-	/*	a[href="#"]::after
+		a[href="#"]::after
 		{
 			position:absolute;
 			content:"+";
@@ -79,11 +79,11 @@
 			right:0;
 			left:-90%;
 		}
-*/
+
 
 
 		//affichage du "-" lorsque le curseur est dessus la section "session'
-		/*li.focus a[href="#"]::after,
+		li.focus a[href="#"]::after,
 		a[href="#"]:hover::after
 		{
 			content:"-";
@@ -92,7 +92,7 @@
 		li{
 			position: relative;
 			
-		}*/
+		}
 
 
 
@@ -122,7 +122,7 @@ Bouton burger
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background: #fafbfc;
+    background: #1900ff;
 }
 
 .menu-toggle:focus {
@@ -156,7 +156,9 @@ menu tablet
 	.main-navigation ul {
 		display: flex;
 		position : static;
+		align-items: center;
 		justify-content: space-around;
+		padding-right:50px;
 		a[href="#"]::after{
 			display: none;
 		
@@ -167,13 +169,13 @@ menu tablet
 		li:hover ul{
 			display: block;
 			position: absolute;
-			width:310px;
-			height: 500px;
+			width:260px;
+			height: 600px;
 		}
 		
 		ul{
 			display: none;
-			width:200px;
+			width:300px;
 		
 		}
 	

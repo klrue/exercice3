@@ -667,28 +667,6 @@ body {
   display: block;
   width: 100vw;
   /* nav-menu  (ul principal) */
-  /*	a[href="#"]::after
-		{
-			position:absolute;
-			content:"+";
-			width:100%;
-			height:100%;
-			top:0;
-			bottom: 0;
-			right:0;
-			left:-90%;
-		}
-*/
-  /*li.focus a[href="#"]::after,
-		a[href="#"]:hover::after
-		{
-			content:"-";
-		}
-
-		li{
-			position: relative;
-			
-		}*/
 }
 
 .main-navigation ul {
@@ -743,6 +721,26 @@ body {
   flex: 1;
 }
 
+.main-navigation a[href="#"]::after {
+  position: absolute;
+  content: "+";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -90%;
+}
+
+.main-navigation li.focus a[href="#"]::after,
+.main-navigation a[href="#"]:hover::after {
+  content: "-";
+}
+
+.main-navigation li {
+  position: relative;
+}
+
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -761,7 +759,7 @@ Bouton burger
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background: #fafbfc;
+  background: #1900ff;
 }
 
 .menu-toggle:focus {
@@ -793,7 +791,9 @@ menu tablet
   .main-navigation ul {
     display: flex;
     position: static;
+    align-items: center;
     justify-content: space-around;
+    padding-right: 50px;
     /*Augmentation de la largeur + hauteur des éléments sous menus*/
   }
   .main-navigation.toggled ul a[href="#"]::after,
@@ -804,13 +804,13 @@ menu tablet
   .main-navigation ul li:hover ul {
     display: block;
     position: absolute;
-    width: 310px;
-    height: 500px;
+    width: 260px;
+    height: 600px;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
     display: none;
-    width: 200px;
+    width: 300px;
   }
 }
 
@@ -1061,34 +1061,28 @@ menu tablet
 
 /* local
 --------------------------------------------- */
-@media screen and (min-width: 37.5em) {
-  .site-title {
-    font-family: Verdana;
-    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 4rem);
-    font-weight: bold;
-    color: black;
-    animation: pulse 5s infinite cubic-bezier(0.17, 0.67, 1, -0.09);
-  }
-  .site-title a {
-    text-decoration: none;
-  }
+.site-title {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana;
+  font-size: clamp(1.5rem, -0.875rem + 8.333vw, 4rem);
+  font-weight: bold;
+  color: black;
+  animation: pulse 5s infinite alternate;
+  margin-right: 70px;
+  padding-right: 30px;
 }
 
-a {
+.site-title a {
   text-decoration: none;
 }
 
 @keyframes pulse {
   0% {
     background-color: #0400ff;
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(20vw);
-    background-color: #ffffff;
   }
   100% {
-    background-color: #0400ff;
+    background-color: #ffffff;
   }
 }
 
@@ -1200,12 +1194,10 @@ body.home::after {
 }
 
 .boutonsMenu button {
-  margin: 30px;
-  width: 40px;
-  height: 40x;
-  border-radius: 50px;
-  background-color: grey;
-  border: 5px solid black;
-  margin-bottom: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid blue;
+  padding: 10px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

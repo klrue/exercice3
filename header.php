@@ -46,7 +46,7 @@
 		</div><!-- .site-branding -->
 
 	<section class='carrousel'>
-	<div><a href="http://localhost/4w4/"TP1 Kevin La Rue></div>
+	<div>TP1 Kevin La Rue</div>
 	<div>21 mars 2021</div>
 	<div>Collège de Maisonneuve</div>
 	</section>
