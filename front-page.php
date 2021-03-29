@@ -43,12 +43,11 @@ get_header();
 	</div>
 	</article>
 	</section>
-	
-	<article class="boutonsMenu">
-	<button id="un"></button>
-	<button id="deux"></button>
-	<button id="trois"></button>
-	</article>
+	<section class="ctrl-slider">
+		<input class="rad-slider" type="radio" name="rad-slider">
+		<input class="rad-slider" type="radio" name="rad-slider">
+		<input class="rad-slider" type="radio" name="rad-slider">
+	</section>
 
 		<?php if ( have_posts() ) : ?>
 

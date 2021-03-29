@@ -20,11 +20,17 @@
         width:100vw;
        
         .slide{
-            width:60%;
+            width:100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            @include tablette
+            {
+                &{
+                    width:60%;
+                }
+            }
                
                 img{
                  display: block;
@@ -74,26 +80,20 @@
 }
 
 //Alignement des boutons du slider au centre de la page
-.boutonsMenu{
-    
-  display: flex;
+.ctrl-slider
+{
+    display: flex;
     justify-content: center;
-    margin-top: 5px;
-   
+    width:100vw;
+
+    .rad-slider{
+        display: block;
+        margin:.5rem 2rem .5rem 2rem ;
+    }
 
     
-//Ajout de spécificités aux boutons
-    button{
-  //border arrondi
-    border-radius:50% ;
-    background-color: $color_white;
-    border: 5px solid $color_boutons_slider;
-    padding:10px;
-    margin: 10px;
-        
-        
-    }
-    
-       
 }
+
+       
+
 
