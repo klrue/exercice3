@@ -1,0 +1,99 @@
+
+
+//classe du slider de la page d'accueil
+.carrousel_slider
+{
+    display: flex;
+    width:300vw;
+    height: 30vh;
+    margin-left: -50px;
+    font-size: 2rem;
+
+//animation du slider, déplacement en X, réalisé en 1,5 secondes
+    transition: transform 1.5s;
+    transform: translate(0);
+//les différentes pages du slider sous formes de divs
+    .slide__conteneur{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        width:100vw;
+       
+        .slide{
+            width:60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+               
+                img{
+                 display: block;
+                 margin: 2%;
+                }
+                
+                .slide__info{
+                    display: flex;
+                    flex-direction: column;
+                
+                p{
+                 font-size: .8rem;
+                 }
+                
+                 a{
+                font-size: 1.2rem;
+                text-decoration: none;
+                 }
+             }
+                  //1er div
+    &:nth-of-type(1){
+        background-color:$color_slider;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:$color_white;
+    }
+    //2e div
+    &:nth-of-type(2){
+        background-color: $color_slider;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:$color_white;
+    }
+    //3e div
+    &:nth-of-type(3){
+        background-color:  $color_slider;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:$color_white;
+    }      
+        }
+ 
+}//fin div
+}
+
+//Alignement des boutons du slider au centre de la page
+.boutonsMenu{
+    
+  display: flex;
+    justify-content: center;
+    margin-top: 5px;
+   
+
+    
+//Ajout de spécificités aux boutons
+    button{
+  //border arrondi
+    border-radius:50% ;
+    background-color: $color_white;
+    border: 5px solid $color_boutons_slider;
+    padding:10px;
+    margin: 10px;
+        
+        
+    }
+    
+       
+}
+
