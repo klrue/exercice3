@@ -4,11 +4,11 @@
 .carrousel_slider
 {
     display: flex;
-    width:700vw;
-    height: 40vh;
-    margin-left: -50px;
+    margin-left:20px;
+    width:600vw;
+    height: 30vh;
     font-size: 2rem;
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap ;
     //animation du slider, déplacement en X, réalisé en 1,5 secondes
     transition: transform 1.5s;
     transform: translate(0);

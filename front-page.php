@@ -11,7 +11,7 @@ get_header();
 ?>
 
 	
-	<section class="carrousel_slider">
+	<!--<section class="carrousel_slider">
 	<article class="slide__conteneur">
 	<div class="slide">
 	<img width="150" height="150" src="http://localhost/4w4/wp-content/uploads/2020/10/meilleures-pratiques-web-design-1024x512-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
@@ -42,18 +42,20 @@ get_header();
 			</div>
 	</div>
 	</article>
-	</section>
+	</section>-->
 	
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+			
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 			<section class="cours">
+
 			<?php
 			/* Start the Loop */
 			$precedent="XXXXXX";
@@ -71,14 +73,14 @@ get_header();
 					<section class="ctrl-slider">
 						<?php echo $chaine_bouton_radio; ?>
 					</section>
-					<?php endif ?>
+					<?php endif; ?>
                    
                     <h2><?php echo $tPropriete['typeCours']?></h2>
 					<section <?php echo ($tPropriete['typeCours'] == 'Web' ? 'class="carrousel_slider"':''); ?>>
-					 <?php endif ?>
+					 <?php endif; ?>
 
 					 <?php if ($tPropriete['typeCours'] == "Web") :
-			  				 get_template_part( 'template-parts/content', 'cours-slider' ); 
+			  				 get_template_part( 'template-parts/content', 'cours-carrousel' ); 
 							   $chaine_bouton_radio .= '<input class="rad-slider" type="radio" name="rad-slider">';
 						else :
 							 get_template_part( 'template-parts/content', 'cours-article' ); 		 
