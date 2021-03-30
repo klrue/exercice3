@@ -1,17 +1,18 @@
 
 ------------------------------------------------------------------------
 
-Site réalisé pour le TP1 2021
+Site réalisé pour le labo5
 Kevin La Rue
 Groupe 1 - mardi
-Site regroupant leees principaux éléments demandées du TP1 pour le cours web 4w4 du tim de maisonnneuve
-Comportant un slider, quelques animations, un bon design, ainsi qu'un menu aborescent adaptatif selon le média utilisé.
+
 
 
 -------------------------------------------------------------------------  
 
 Lien de ma page git hub tp1
 
-https://klrue.github.io/TP1/
+https://klrue.github.io/labo5/index.html
 
 -------------------------------------------------------------------------
+
+L'implémentation ne s'est pas réalisé correctement sur WebDev...
