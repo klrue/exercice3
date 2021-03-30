@@ -1,16 +1,14 @@
 (function(){
-		let bout = document.querySelectorAll('.rad-slider')
-		let slider = document.querySelector('.carroussel_slider')
-		bout1.addEventListener("mousedown",function()
+		let bout = document.querySelectorAll('.ctrl-slider input')
+		let slider = document.querySelector('.carrousel_slider')
+		let k = 0;
+		bout[0].checked = true;
+		for(const bt of bout)
 		{
-			carrousel.style.transform="translateX(0)"
-		})
-		bout2.addEventListener("mousedown",function()
-		{
-			carrousel.style.transform="translateX(-100vw)"
-		})
-		bout3.addEventListener("mousedown",function()
-		{
-			carrousel.style.transform="translateX(-200vw)"
-		})
+			bt.value = k++;
+			bt.addEventListener('mousedown',function()
+			{
+				slider.style.transform = "translateX(" + (-this.value*100) + "vw)"
+			})
+		}
     }())

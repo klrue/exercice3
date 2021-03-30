@@ -4,27 +4,27 @@
 .carrousel_slider
 {
     display: flex;
-    width:300vw;
-    height: 30vh;
+    width:700vw;
+    height: 40vh;
     margin-left: -50px;
     font-size: 2rem;
-
-//animation du slider, déplacement en X, réalisé en 1,5 secondes
+    flex-wrap: nowrap !important;
+    //animation du slider, déplacement en X, réalisé en 1,5 secondes
     transition: transform 1.5s;
     transform: translate(0);
-//les différentes pages du slider sous formes de divs
+    //les différentes pages du slider sous formes de divs
     .slide__conteneur{
         display: flex;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
         width:100vw;
+        
        
         .slide{
-            width:100%;
+            width:90%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             align-items: center;
+        
             @include tablette
             {
                 &{
@@ -40,6 +40,7 @@
                 .slide__info{
                     display: flex;
                     flex-direction: column;
+                    
                 
                 p{
                  font-size: .8rem;

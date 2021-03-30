@@ -10,12 +10,12 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	
 	<section class="carrousel_slider">
 	<article class="slide__conteneur">
 	<div class="slide">
 	<img width="150" height="150" src="http://localhost/4w4/wp-content/uploads/2020/10/meilleures-pratiques-web-design-1024x512-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
-			<div class="slide__info"></div>
+			<div class="slide__info">
 				   <p>582-3W3 - Web</p>
 				   <a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
 				   <p>Session 3</p>
@@ -25,7 +25,7 @@ get_header();
 	<article class='slide__conteneur'>
 	<div class="slide">
 		<img src="" alt="">
-			<div class="slide__info"></div>
+			<div class="slide__info">
 				   <p>582-3W3 - Web</p>
 				   <a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
 				   <p>Session 3</p>
@@ -35,7 +35,7 @@ get_header();
 	<article class='slide__conteneur'>
 	<div class="slide">
 		<img src="" alt="">
-			<div class="slide__info"></div>
+			<div class="slide__info">
 				   <p>582-3W3 - Web</p>
 				   <a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
 				   <p>Session 3</p>
@@ -43,11 +43,7 @@ get_header();
 	</div>
 	</article>
 	</section>
-	<section class="ctrl-slider">
-		<input class="rad-slider" type="radio" name="rad-slider">
-		<input class="rad-slider" type="radio" name="rad-slider">
-		<input class="rad-slider" type="radio" name="rad-slider">
-	</section>
+	
 
 		<?php if ( have_posts() ) : ?>
 
@@ -62,6 +58,7 @@ get_header();
 			/* Start the Loop */
 			$precedent="XXXXXX";
 			global $tPropriete;
+			$chaine_bouton_radio = '';
 			while ( have_posts() ) :
 				the_post();
 				//choix des affichages dans les articles
@@ -69,12 +66,24 @@ get_header();
 				 if($tPropriete['typeCours'] != $precedent  ): ?>
                 <?php   if($precedent != "XXXXXX") :?>
                     </section>
-                    <?php endif ?>
+					<?php endif; ?>
+					<?php if ($precedent == "Web") : ?>
+					<section class="ctrl-slider">
+						<?php echo $chaine_bouton_radio; ?>
+					</section>
+					<?php endif ?>
+                   
                     <h2><?php echo $tPropriete['typeCours']?></h2>
-					<section>
+					<section <?php echo ($tPropriete['typeCours'] == 'Web' ? 'class="carrousel_slider"':''); ?>>
 					 <?php endif ?>
-			   <?php get_template_part( 'template-parts/content', 'cours-article' ); 		 
-			   $precedent =$tPropriete['typeCours'];
+
+					 <?php if ($tPropriete['typeCours'] == "Web") :
+			  				 get_template_part( 'template-parts/content', 'cours-slider' ); 
+							   $chaine_bouton_radio .= '<input class="rad-slider" type="radio" name="rad-slider">';
+						else :
+							 get_template_part( 'template-parts/content', 'cours-article' ); 		 
+						endif;
+							 $precedent =$tPropriete['typeCours'];
 				endwhile;?>
 			   
 			</section>
