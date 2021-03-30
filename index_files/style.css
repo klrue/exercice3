@@ -1140,7 +1140,8 @@ body.home::after {
   background-color: orange;
   margin-bottom: 1vh;
   border: 5px solid;
-  margin-right: 60px;
+  margin-right: 80px;
+  margin-left: 60px;
   height: 150px;
   opacity: 1;
   transition: 0.8s;
@@ -1239,11 +1240,11 @@ body.home::after {
 
 .carrousel_slider {
   display: flex;
-  width: 700vw;
-  height: 40vh;
-  margin-left: -50px;
+  margin-left: 20px;
+  width: 600vw;
+  height: 30vh;
   font-size: 2rem;
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
   transition: transform 1.5s;
   transform: translate(0);
 }
