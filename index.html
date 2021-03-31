@@ -45,13 +45,27 @@ img.emoji {
 								<p class="site-description">Réalisé avec WordPress</p>
 					</div><!-- .site-branding -->
 
-	<section class="carrousel">
+	<section class="carrousel" style="transform: translateX(0px);">
 		
 		
 		
-	<div>TP1 Kevin La Rue</div>
-	<div>21 mars 2021</div>
-	<div>Collège de Maisonneuve</div>
+	<div><img width="180" height="180" src="./index_files/4388962.svg" alt="kebab Icône gratuit" title="kebab Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4388960.svg" alt="des légumes Icône gratuit" title="des légumes Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4388969.svg" alt="kebab Icône gratuit" title="kebab Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4388959.svg" alt="goûter Icône gratuit" title="goûter Icône gratuit" class="loaded">
+	</div>
+	<div>
+	<img width="180" height="180" src="./index_files/4389003.svg" alt="bifteck Icône gratuit" title="bifteck Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4388981.svg" alt="fast food Icône gratuit" title="fast food Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4388992.svg" alt="pizza Icône gratuit" title="pizza Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4389896.svg" alt="petit-déjeuner Icône gratuit" title="petit-déjeuner Icône gratuit" class="loaded">
+	</div>
+	<div>
+	<img width="180" height="180" src="./index_files/4388985.svg" alt="la crème glacée Icône gratuit" title="la crème glacée Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4389887.svg" alt="crêpes Icône gratuit" title="crêpes Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4389913.svg" alt="gâteau Icône gratuit" title="gâteau Icône gratuit" class="loaded">
+	<img width="180" height="180" src="./index_files/4389930.svg" alt="des céréales Icône gratuit" title="des céréales Icône gratuit" class="loaded">
+	</div>
 	</section>
 	
 	<article class="boutonsMenu">
@@ -169,7 +183,7 @@ img.emoji {
 
 			                					                   
                     <h2>Web</h2>
-					<section class="carrousel_slider" style="transform: translateX(0vw);">
+					<section class="carrousel_slider">
 					 
 					 
   <article class="slide__conteneur">
@@ -440,33 +454,11 @@ img.emoji {
 
 			   </article>			   
 			</section>
-						   			   <h3>-582-1W1 Mise en page Web (75h)</h3>
-			   			   <h3>-582-2W2	Animation et interactivité Web (75h)</h3>
-			   			   <h3>-582-3W3 Création de sites Web dynamiques (90h)</h3>
-			   			   <h3>-582-4PA Interfaces Web réactives et animées – Cours au choix (75h)</h3>
-			   			   <h3>-582-4W4 Conception d’interfaces et développement Web (90h)</h3>
-			   			   <h3>-582-5PA   Technologies émergentes et avancées – volet Programmation (60h)</h3>
-			   			   <h3>-350-5N1 Communication et dynamique d’une équipe de travail (45h)</h3>
-			   			   <h3>-393-5E1 Méthodes de recherche et préparation au marché du travail (45h)</h3>
-			   			   <h3>-582-6N2 Projet de fin d’études (120h)</h3>
-			   			   <h3>-582-6N3 Stage (285h)</h3>
-			   			   <h3>-582-1J1 Animation et interactivité en jeu (75h)</h3>
-			   			   <h3>-582-2J2	Création de jeu 2D (60h)</h3>
-			   			   <h3>-582-3J3 Création de jeu 3D (75h)</h3>
-			   			   <h3>-582-5JA  Expérimentation en jeu – volet programmation (90h)</h3>
-			   			   <h3>-582-5JB Expérimentation en jeu – volet création (90h)</h3>
-			   			   <h3>-582-5MB Technologies émergentes et avancées – volet Création (60h)</h3>
-			   			   <h3>-582-1M2 Conception graphique et imagerie matricielle (90h)</h3>
-			   			   <h3>-582-2M3 Effets spéciaux et animation (60h)</h3>
-			   			   <h3>-582-2M4 Conception graphique et imagerie vectorielle (90h)</h3>
-			   			   <h3>-582-3M5	Imagerie 3D (75h)</h3>
-			   			   <h3>-582-4MB Animation 3D (75h)</h3>
-			   			   <h3>-582-1M1 Création vidéo (75h)</h3>
-			   			   <h3>-582-3C1 Design d’interactivité (75h)</h3>
-			   			   <h3>-582-4C2 Gestion de projets multimédias (45h)</h3>
-			   			   <h3>-582-4J4 Création de jeu en équipe (105h)</h3>
-			   			   <h3>-582-5W5	Projet Web en équipe (105h)</h3>
-			   		
+			<!--?php rewind_posts(); ?>
+			   <!?php while ( have_posts()) : the_post();?>
+			   <!h3>-<!?php echo get_the_title();?></h3>
+			   <!?php endwhile;?>-->
+		
 				<!-- #main -->
 
 
