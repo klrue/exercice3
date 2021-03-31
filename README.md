@@ -11,7 +11,7 @@ Groupe 1 - mardi
 
 Lien de ma page git hub 
 
-https://klrue.github.io/labo5/index.html
+https://klrue.github.io/labo-6/
 
 ++webdev
 
