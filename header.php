@@ -49,9 +49,23 @@
 		
 		
 		
-	<div>TP1 Kevin La Rue</div>
-	<div>21 mars 2021</div>
-	<div>Collège de Maisonneuve</div>
+	<div><img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388962.svg?token=exp=1617219186~hmac=d7ad194383b7515986153f5317639992" alt="kebab Icône gratuit" title="kebab Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388960.svg?token=exp=1617219186~hmac=19bea31d35eff12fc96eac91d6e1fdd8" alt="des légumes Icône gratuit" title="des légumes Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388969.svg?token=exp=1617219186~hmac=833819838559775735b8046709427ed4" alt="kebab Icône gratuit" title="kebab Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388959.svg?token=exp=1617219186~hmac=140591457cbd8d89ec818fd96bfa9c5d" alt="goûter Icône gratuit" title="goûter Icône gratuit" class="loaded">
+	</div>
+	<div>
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4389/4389003.svg?token=exp=1617219186~hmac=58a308d21a54dd38c827f45191b1898e" alt="bifteck Icône gratuit" title="bifteck Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388981.svg?token=exp=1617219186~hmac=bdb51b875cbedc964f746a9b0e94a1d3" alt="fast food Icône gratuit" title="fast food Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388992.svg?token=exp=1617219186~hmac=248e9e977aada3c1fa2f55a522bc30a1" alt="pizza Icône gratuit" title="pizza Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4389/4389896.svg?token=exp=1617219186~hmac=0a26ba8956ceb92ded30b9bf4f3114f9" alt="petit-déjeuner Icône gratuit" title="petit-déjeuner Icône gratuit" class="loaded">
+	</div>
+	<div>
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4388/4388985.svg?token=exp=1617219711~hmac=6ea4e2ac35e86e3e11b85288cd01643a" alt="la crème glacée Icône gratuit" title="la crème glacée Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4389/4389887.svg?token=exp=1617219711~hmac=992d7ba011c517ae776be5b3b4f732fe" alt="crêpes Icône gratuit" title="crêpes Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4389/4389913.svg?token=exp=1617219711~hmac=0bd99f588346cd93879d169f9e425f26" alt="gâteau Icône gratuit" title="gâteau Icône gratuit" class="loaded">
+	<img width="180" height="180" src="https://www.flaticon.com/svg/vstatic/svg/4389/4389930.svg?token=exp=1617219711~hmac=d21112a9eebcab21f671bd1fbe117c42" alt="des céréales Icône gratuit" title="des céréales Icône gratuit" class="loaded">
+	</div>
 	</section>
 	
 	<article class="boutonsMenu">

@@ -89,10 +89,10 @@ get_header();
 				endwhile;?>
 			   
 			</section>
-			<?php rewind_posts(); ?>
-			   <?php while ( have_posts()) : the_post();?>
-			   <h3>-<?php echo get_the_title();?></h3>
-			   <?php endwhile;?>
+			<!--?php rewind_posts(); ?>
+			   <!?php while ( have_posts()) : the_post();?>
+			   <!h3>-<!?php echo get_the_title();?></h3>
+			   <!?php endwhile;?>-->
 		
 			<?php endif;?>
 	</main><!-- #main -->

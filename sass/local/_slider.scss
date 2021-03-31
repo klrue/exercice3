@@ -3,11 +3,13 @@
 //classe du slider de la page d'accueil
 .carrousel_slider
 {
+    display: none;
+    @include tablette
+    {
     display: flex;
-    margin-left:20px;
     width:600vw;
-    height: 30vh;
-    font-size: 2rem;
+    height: 20vh;
+    font-size: 1rem;
     flex-wrap: nowrap ;
     //animation du slider, déplacement en X, réalisé en 1,5 secondes
     transition: transform 1.5s;
@@ -15,21 +17,24 @@
     //les différentes pages du slider sous formes de divs
     .slide__conteneur{
         display: flex;
-        justify-content: center;
-        align-items: center;
         width:100vw;
+
+       
+       
         
        
         .slide{
             width:90%;
             display: flex;
             align-items: center;
+            
         
             @include tablette
             {
                 &{
                     width:60%;
                 }
+
             }
                
                 img{
@@ -41,6 +46,7 @@
                     display: flex;
                     flex-direction: column;
                     
+                    
                 
                 p{
                  font-size: .8rem;
@@ -51,38 +57,18 @@
                 text-decoration: none;
                  }
              }
-                  //1er div
-    &:nth-of-type(1){
-        background-color:$color_slider;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:$color_white;
-    }
-    //2e div
-    &:nth-of-type(2){
-        background-color: $color_slider;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:$color_white;
-    }
-    //3e div
-    &:nth-of-type(3){
-        background-color:  $color_slider;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color:$color_white;
-    }      
+  
         }
- 
-}//fin div
+    } 
+}
 }
 
 //Alignement des boutons du slider au centre de la page
 .ctrl-slider
 {
+    display: none;
+    @include tablette
+    {
     display: flex;
     justify-content: center;
     width:100vw;
@@ -91,6 +77,7 @@
         display: block;
         margin:.5rem 2rem .5rem 2rem ;
     }
+}
 
     
 }

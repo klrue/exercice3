@@ -1,6 +1,7 @@
 .main-navigation {
 	display: block;
 	width: 100vw;
+
 	
 //caractéristiques du ul principal
 	ul {
@@ -164,6 +165,7 @@ menu tablet
 			display: none;
 		
 		}
+		z-index: 99999;
 	
 
 		/*Augmentation de la largeur + hauteur des éléments sous menus*/
@@ -174,6 +176,7 @@ menu tablet
 			width:260px;
 			//hauteur arborescent
 			height: 600px;
+			
 		}
 		
 		ul{

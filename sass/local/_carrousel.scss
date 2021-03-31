@@ -3,6 +3,10 @@
 //classe du slider de la page d'accueil
 .carrousel
 {
+  display: none;
+
+@include tablette
+{
     display: flex;
     width:300vw;
     height: 20vh;
@@ -11,11 +15,15 @@
     -webkit-box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
 -moz-box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
 box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
+}
     
 //animation du slider, déplacement en X, réalisé en 1,5 secondes
     transition: transform 1.5s;
 //les différentes pages du slider sous formes de divs
     div{
+        img{
+            margin:5vw;
+           }
 
         width:100vw;
     //1er div
@@ -47,10 +55,16 @@ box-shadow: 9px 7px 24px 6px rgba(0,0,0,0.75);
 
 //Alignement des boutons du slider au centre de la page
 .boutonsMenu{
-    
-  display: flex;
+    display: none;
+
+    @include tablette
+
+{
+    display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
    
 
     

@@ -794,6 +794,7 @@ menu tablet
     align-items: center;
     justify-content: space-around;
     padding-right: 50px;
+    z-index: 99999;
     /*Augmentation de la largeur + hauteur des éléments sous menus*/
   }
   .main-navigation.toggled ul a[href="#"]::after,
@@ -1188,16 +1189,26 @@ body.home::after {
 }
 
 .carrousel {
-  display: flex;
-  width: 300vw;
-  height: 20vh;
-  font-size: 2rem;
-  box-shadow: 9px 7px 24px 6px rgba(0, 0, 0, 0.75);
+  display: none;
   transition: transform 1.5s;
+}
+
+@media (min-width: 800px) {
+  .carrousel {
+    display: flex;
+    width: 300vw;
+    height: 20vh;
+    font-size: 2rem;
+    box-shadow: 9px 7px 24px 6px rgba(0, 0, 0, 0.75);
+  }
 }
 
 .carrousel div {
   width: 100vw;
+}
+
+.carrousel div img {
+  margin: 5vw;
 }
 
 .carrousel div:nth-of-type(1) {
@@ -1225,9 +1236,16 @@ body.home::after {
 }
 
 .boutonsMenu {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .boutonsMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+  }
 }
 
 .boutonsMenu button {
@@ -1239,86 +1257,85 @@ body.home::after {
 }
 
 .carrousel_slider {
-  display: flex;
-  margin-left: 20px;
-  width: 600vw;
-  height: 30vh;
-  font-size: 2rem;
-  flex-wrap: nowrap;
-  transition: transform 1.5s;
-  transform: translate(0);
-}
-
-.carrousel_slider .slide__conteneur {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.carrousel_slider .slide__conteneur .slide {
-  width: 90%;
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 @media (min-width: 800px) {
+  .carrousel_slider {
+    display: flex;
+    width: 600vw;
+    height: 20vh;
+    font-size: 1rem;
+    flex-wrap: nowrap;
+    transition: transform 1.5s;
+    transform: translate(0);
+  }
+  .carrousel_slider .slide__conteneur {
+    display: flex;
+    width: 100vw;
+  }
+  .carrousel_slider .slide__conteneur .slide {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 800px) and (min-width: 800px) {
   .carrousel_slider .slide__conteneur .slide {
     width: 60%;
   }
 }
 
-.carrousel_slider .slide__conteneur .slide img {
-  display: block;
-  margin: 2%;
-}
-
-.carrousel_slider .slide__conteneur .slide .slide__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.carrousel_slider .slide__conteneur .slide .slide__info p {
-  font-size: .8rem;
-}
-
-.carrousel_slider .slide__conteneur .slide .slide__info a {
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.carrousel_slider .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #0000d1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.carrousel_slider .slide__conteneur .slide:nth-of-type(2) {
-  background-color: #0000d1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.carrousel_slider .slide__conteneur .slide:nth-of-type(3) {
-  background-color: #0000d1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+@media (min-width: 800px) {
+  .carrousel_slider .slide__conteneur .slide img {
+    display: block;
+    margin: 2%;
+  }
+  .carrousel_slider .slide__conteneur .slide .slide__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrousel_slider .slide__conteneur .slide .slide__info p {
+    font-size: .8rem;
+  }
+  .carrousel_slider .slide__conteneur .slide .slide__info a {
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
 }
 
 .ctrl-slider {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
+  display: none;
 }
 
-.ctrl-slider .rad-slider {
-  display: block;
-  margin: .5rem 2rem .5rem 2rem;
+@media (min-width: 800px) {
+  .ctrl-slider {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  .ctrl-slider .rad-slider {
+    display: block;
+    margin: .5rem 2rem .5rem 2rem;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000d4;
+  height: 20vh;
+  color: white;
+  font-size: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-size: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
