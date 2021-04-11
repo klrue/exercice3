@@ -69,19 +69,21 @@ get_header();
                 <?php   if($precedent != "XXXXXX") :?>
                     </section>
 					<?php endif; ?>
-					<?php if ($precedent == "Web") : ?>
+					<?php if (in_array($precedent, ['Web', 'Jeu'])) : ?>
 					<section class="ctrl-slider">
-						<?php echo $chaine_bouton_radio; ?>
+						<?php echo $chaine_bouton_radio; 
+						$chaine_bouton_radio = '';
+						?>
 					</section>
 					<?php endif; ?>
                    
                     <h2><?php echo $tPropriete['typeCours']?></h2>
-					<section <?php echo ($tPropriete['typeCours'] == 'Web' ? 'class="carrousel_slider"':''); ?>>
+					<section <?php echo (in_array($tPropriete['typeCours'], ['Web', 'Jeu']) ? 'class="carrousel_slider"':''); ?>>
 					 <?php endif; ?>
 
-					 <?php if ($tPropriete['typeCours'] == "Web") :
+					 <?php if (in_array($tPropriete['typeCours'], ['Web', 'Jeu']) ) :
 			  				 get_template_part( 'template-parts/content', 'cours-carrousel' ); 
-							   $chaine_bouton_radio .= '<input class="rad-slider" type="radio" name="rad-slider">';
+							   $chaine_bouton_radio .= '<input class="rad-slider" type="radio" name="rad-'.$tPropriete['typeCours'].'">';
 						else :
 							 get_template_part( 'template-parts/content', 'cours-article' ); 		 
 						endif;

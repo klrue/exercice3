@@ -7,7 +7,7 @@
     @include tablette
     {
     display: flex;
-    width:600vw;
+    width:300vw;
     height: 20vh;
     font-size: 1rem;
     flex-wrap: nowrap ;
@@ -17,7 +17,8 @@
     //les différentes pages du slider sous formes de divs
     .slide__conteneur{
         display: flex;
-        width:100vw;
+        width:50vw;
+       
 
        
        
@@ -28,7 +29,7 @@
             display: flex;
             align-items: center;
             
-        
+      
             @include tablette
             {
                 &{
@@ -45,6 +46,7 @@
                 .slide__info{
                     display: flex;
                     flex-direction: column;
+                    
                     
                     
                 
@@ -76,6 +78,23 @@
     .rad-slider{
         display: block;
         margin:.5rem 2rem .5rem 2rem ;
+
+    
+
+        &:nth-of-type(4)
+        {
+            display: none;
+        }
+
+        &:nth-of-type(5)
+        {
+            display: none;
+        }
+
+        &:nth-of-type(6)
+        {
+            display: none;
+        }
     }
 }
 

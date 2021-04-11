@@ -14,6 +14,7 @@
 		background-color: #000;
 		text-align: left;
 		left:0;
+		z-index: 99999;
 	
 	
 //caractéristiques du menu aborescent
@@ -170,12 +171,14 @@ menu tablet
 
 		/*Augmentation de la largeur + hauteur des éléments sous menus*/
 		li:hover ul{
-			display: block;
+			display: flex;
 			position: absolute;
+			flex-direction: column;
 			//largeur arborescent
 			width:260px;
 			//hauteur arborescent
-			height: 600px;
+			//height: 600px;
+			animation: anim-sous-menu .5s both;
 			
 		}
 		
@@ -188,6 +191,18 @@ menu tablet
 	
 	}
 
+}
+
+@keyframes anim-sous-menu
+{
+	0%{
+		opacity: 0;
+		transform: translateX(0) translateY(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0) translateY(0);
+	}
 }
 
 .comment-navigation,
