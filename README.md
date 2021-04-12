@@ -1,8 +1,9 @@
 
 ------------------------------------------------------------------------
 
-Site réalisé pour le labo7
 Kevin La Rue
+Labo 7
+Labo portant sur l'animation du nav et de l'ajout d'un deuxieme carrousel pour la section "jeu"
 Groupe 1 - mardi
 
 
