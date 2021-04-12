@@ -1,7 +1,7 @@
 
 ------------------------------------------------------------------------
 
-Site réalisé pour le labo5
+Site réalisé pour le labo7
 Kevin La Rue
 Groupe 1 - mardi
 
@@ -11,7 +11,7 @@ Groupe 1 - mardi
 
 Lien de ma page git hub 
 
-https://klrue.github.io/labo-6/
+https://github.com/klrue/labo-7
 
 ++webdev
 

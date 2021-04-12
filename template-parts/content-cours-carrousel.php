@@ -10,6 +10,7 @@ global $tPropriete;
 ?>
 
   <article class="slide__conteneur">
+	  <div class ="slide">
 
   <div class="slide__info">
 
@@ -20,6 +21,6 @@ global $tPropriete;
 				   <a href="<?php echo get_permalink()?>"><?php echo $tPropriete['titrePartiel'];?></a>
 				   <p>Session <?php echo $tPropriete['session']; ?></p>
 				  
-				   
+</div>
 				   </div>
 			   </article>

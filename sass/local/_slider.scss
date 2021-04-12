@@ -28,6 +28,7 @@
             width:90%;
             display: flex;
             align-items: center;
+            justify-content: center;
             
       
             @include tablette
@@ -46,9 +47,9 @@
                 .slide__info{
                     display: flex;
                     flex-direction: column;
-                    
-                    
-                    
+                    text-align: center;
+                  
+
                 
                 p{
                  font-size: .8rem;
