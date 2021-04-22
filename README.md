@@ -2,8 +2,8 @@
 ------------------------------------------------------------------------
 
 Kevin La Rue
-Labo 7
-Labo portant sur l'animation du nav et de l'ajout d'un deuxieme carrousel pour la section "jeu"
+ex 3
+exercice portant sur l'implantation d'une section projet avec des flips cards
 Groupe 1 - mardi
 
 
@@ -12,11 +12,11 @@ Groupe 1 - mardi
 
 Lien de ma page git hub 
 
-https://github.com/klrue/labo-7
+https://github.com/klrue/exercice3
 
 ++webdev
 
-https://e1869895.webdev.cmaisonneuve.qc.ca/4w4/
+https://e1869895.webdev.cmaisonneuve.qc.ca/4w4-1/
 
 -------------------------------------------------------------------------
 

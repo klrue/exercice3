@@ -1,0 +1,44 @@
+
+//classe du nom principal du site
+.site-title
+{
+    display: flex;
+    justify-content: center;
+
+font-family: $font__title;
+font-size: clamp(1.5rem, #{'-0.875rem + 8.333vw'}, 4rem);
+font-weight: bold;
+color:black;
+//animation en alternance du background du titre
+animation: pulse 5s infinite alternate;
+margin-right: 70px;
+padding-right: 30px;
+a{
+    text-decoration: none;
+}
+
+}
+//caractéristiques de la description du site
+.site-description
+{
+    font-family: $font__title;
+    font-size: clamp(.8rem, #{'-0.875rem + 8.333vw'}, 1.5rem);
+    font-weight: bold; 
+    text-align: center; 
+    color:grey;
+}
+
+.page-header
+{
+    margin-top: 50px;
+    .page-title
+    {
+        font-size:4rem;
+        color:rgb(175,41,41);
+    }
+    .article
+    {
+        font-size:1rem ;
+        color:rgb(84, 89, 92)
+    }
+}
